@@ -14,58 +14,38 @@
       <h1 class="my-4 text-center text-5xl text-white font-['Open_Sans']">
         Contact Us
       </h1>
-      <p
-        class="mb-4 text-center text-xl text-white mx-auto font-['oswald'] md:max-w-prose">
+      <p class="mb-4 text-center text-xl text-white mx-auto font-['oswald'] md:max-w-prose">
         Got a technical issue?
       </p>
-    </div>
-    <form id="myform" method="post" name="myform" action=""
-      class="w-3/4 md:w-1/2 mx-auto">
-      <!-- <div class="flex flex-col py-5">
-        <label for="" class="text-white mb-4">Date of complaint</label>
-        <input type="date" id="date" class="px-5 py-3" />
-      </div> -->
-      <div class="py-5">
-        <label for="name" class="text-white mb-4">Complainant's name:</label>
-        <div>
-          <input id="name" type="text" name="name"
-            class="block w-full px-4 py-4 text-gray-700 bg-white border border-gray-200 rounded-md focus:outline-none"
-            placeholder="Name" />
+      <form id="myform" name="myform" action="" class="w-3/4 md:w-1/2 mx-auto">
+        <div class="py-5">
+          <label for="name" class="text-white mb-4">Complainant's name:</label>
+          <div>
+            <input id="name" type="text" name="name" class="block w-full px-4 py-4 text-gray-700 bg-white border border-gray-200 rounded-md focus:outline-none" placeholder="Name" />
+          </div>
         </div>
-      </div>
-      <div class="flex gap-2">
-        <div class="flex">
-          <input type="radio" value="Hadir" name="radio"
-            class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-            id="radio1" />
-          <label for="radio1"
-            class="text-sm text-gray-500 ms-2 dark:text-gray-400">Hadir</label>
+        <div class="flex gap-2">
+          <div class="flex">
+            <input type="radio" value="Hadir" name="radio" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" id="radio1" />
+            <label for="radio1" class="text-sm text-gray-500 ms-2 dark:text-gray-400">Hadir</label>
+          </div>
+          <div class="flex">
+            <input type="radio" value="Tidak Hadir" name="radio" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" id="radio2" />
+            <label for="radio2" class="text-sm text-gray-500 ms-2 dark:text-gray-400">Tidak
+              Hadir</label>
+          </div>
         </div>
-        <div class="flex">
-          <input type="radio" value="Tidak Hadir" name="radio"
-            class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
-            id="radio2" />
-          <label for="radio2"
-            class="text-sm text-gray-500 ms-2 dark:text-gray-400">Tidak
-            Hadir</label>
+        <div class="flex flex-col py-5">
+          <label for="message" class="text-white mb-4">Message</label>
+          <textarea id="message" class="block p-5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg border border-gray-300 focus:outline-none" rows="3" placeholder="Tulis pesan dan kesanmu"></textarea>
         </div>
-      </div>
-      <div class="flex flex-col py-5">
-        <label for="message" class="text-white mb-4">Message</label>
-        <textarea id="message"
-          class="block p-5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg border border-gray-300 focus:outline-none"
-          rows="3" placeholder="Tulis pesan dan kesanmu"></textarea>
-      </div>
-      <button type="button" id="btn"
-        class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-yellow-200">
-        Send message
-      </button>
-      <button type="button" id="clearBtn"
-        class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-red-200 mt-2">Clear
-        All</button>
-      <div id="display"
-        class="text-white text-center mt-20 rounded-md px-6 overflow-y-scroll h-max-96">
-    </form>
+        <button type="button" id="btn" class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-yellow-200">
+          Send message
+        </button>
+        <button type="button" id="clearBtn" class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-red-200 mt-2">Clear
+          All</button>
+        <div id="display" class="text-white text-center mt-20 rounded-md px-6 overflow-y-scroll h-max-96">
+      </form>
     </div>
   </section>
 
